@@ -4,6 +4,7 @@ $(function(){
         // console.log("hello");
         if(currentQuiz==null){
             currentQuiz=0;
+            $('#options').empty();
             $("#question").text(questions[0].question);
             questions[0].answers.forEach(function(element,index,array){
                 $("#options").append(
