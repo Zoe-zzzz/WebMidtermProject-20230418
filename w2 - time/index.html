@@ -10,7 +10,7 @@
  
     </head>
     <body>
-        <h1>社團課程時間表</h1>
+        <h1>社團課程時間表時間型態比較</h1>
         <label for="firstdate">開始日期:</label>
         <input type="date" id="firstdate">
         <button id="submit">Submit</button><br>
@@ -18,15 +18,18 @@
         <input type="text" id="textbox" >
         <button id="textsubmit">Submit</button><br>
         <button id="textdelete">Delete</button>
-        <table id="courseTable"></table>
+        <table id="courseTable" style="position: absolute;top: 150px;"></table>
+        <table id="courseTable2" style="position: absolute;right: 200px;top:160px"></table>
         <div style="position: absolute;bottom: 10px;">
             <h4>補充說明:</h4>
             <p>
-                1.在畫面上加入input type=’date’，可以設定第一天的日期;<br>若沒有給定，則從當天開始排<br>
-                2.遇到主題為國定假日，那一列灰色<br>
-                3.加入delete button刪掉最後一行，可以重複使用
-                4.單數與雙數列不同顏色<br>
-                5.一個文字框，輸入主題後新增一個活動
+                1.lab 2延伸，兩個表格同時做一樣的指令<br>
+                2.砍掉年份，測試月份與日期為一位數或兩位數的狀況<br>
+                3.在畫面上加入input type=’date’，可以設定第一天的日期;<br>若沒有給定，則從當天開始排<br>
+                4.遇到主題為國定假日，那一列灰色<br>
+                5.加入delete button刪掉最後一行，可以重複使用
+                6.單數與雙數列不同顏色<br>
+                7.一個文字框，輸入主題後新增一個活動
             </p>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

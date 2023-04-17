@@ -125,3 +125,6 @@ return findmax;
 $("#retest").on("click",function(){
     location.reload(true);
  });
+ $("#reset").on("click",function(){
+    location.reload(true);
+ });
