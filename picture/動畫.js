@@ -9,18 +9,7 @@ function showmin(){
 $('.w3').html(min);
 }
 
-$('.play').click(function () {
-    $('.first').css('display', 'none');
-    $('.second').fadeIn();
-    $('.pfadein').fadeIn(3000);
-    $('.img4').fadeIn(3000);
-    
-    setTimeout(img2, 8000);
-    setTimeout(img3, 8400);
-    setTimeout(img4, 8800);
-    setTimeout(img5, 9200);
-    setTimeout(img6, 11000);
-});
+
 $('.oo').click(function () {
     $('.first2').css('display', 'none');
     $('.mytable').fadeIn();

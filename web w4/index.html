@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple RPG</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>我要去右下角</h1>
+        <div style="position: absolute;left: 100px;top:100px ;width:50px;height:100px;background-color: salmon;">
+            <p>得分</p>
+            <p id="scores">0</p>
+        </div>
+        <div style="position: absolute;left: 200px;top:100px ;width:150px;height:100px;background-color: salmon;">
+            <p>限時1分鐘</p>
+            <p id="time">60</p>
+        </div>
+        <div>
+        <canvas id="myCanvas" width="600" height="600"></canvas>
+        <p id="talkBox"></p>
+        </div>
+        <div style="position: absolute;bottom: 10px;text-align: left;">
+            <h4>補充說明:</h4>
+            <p>
+                //圖片有時候跑不出來，要多按幾次重跑<br>
+                1.格子變成12*12<br>
+                2.得分機制，遇到敵人扣分，吃到金幣袋加一百<br>
+                3.除了上下左右，按空白鍵可以跳躍<br>
+                4.倒數計時一分鐘，時間到gameover動畫跳出<br>
+                5.在時間內走至終點，顯示win動畫
+            </p>
+        </div>
+        <p id="gameover" style="font-size: 200px;color: darkred;z-index: 50;position: absolute;bottom: 0px;left:100px;text-shadow: 15px 15px 15px black;display: none;">GAME OVER</p>
+        <div id="gameover2" style="background-color:white;opacity: 0.7;position: absolute;top: 0px;bottom: unset;height: 700px;width: 1400px;z-index: 30px;display: none;"></div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

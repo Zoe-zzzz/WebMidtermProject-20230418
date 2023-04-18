@@ -61,7 +61,7 @@
                 position: absolute;
                 bottom: 45px;
                 left: 400px;
-                display: none;
+                
             }
             .p2 {
                 background-image: url("IMG_1532.JPG");
@@ -72,7 +72,7 @@
                 position: absolute;
                 bottom: 45px;
                 left: 600px;
-                display: none;
+                
             }
             .p3 {
                 background-image: url("IMG_1534.JPG");
@@ -83,7 +83,7 @@
                 position: absolute;
                 bottom: 45px;
                 left: 800px;
-                display: none;
+                
             }
             .p1:hover, .p2:hover, .p3:hover {
                 box-shadow: 7px 7px 15px lemonchiffon;
@@ -106,46 +106,38 @@
                 background-repeat: no-repeat;
                 bottom:28px;
                 right:372px;
-                display: none;
+                
             }
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         
     </HEAD>
     <BODY>
-        
-        <img src="PNG image.png" style="width:400px;position:absolute;bottom:0px;left:100px;" class="first c" />
-        <h1 style="color: white; position: absolute; top:200px; left: 420px;" class="first c">Morning darling, do you want to play some games?</h1>
-        <h1 class="play first" style="color: white; position: absolute; top:400px; left: 670px;">OFCOURSE</h1>
-        <h1 class="second first2" style="text-align: center; color: white; position: absolute; top: 200px; left: 645px; display: none;">THE RULE</h1>
-        <hr class="second first2" style="background-color: white; border: none; height: 2px; width: 500px; position: absolute; top: 180px; left: 470px; display: none;">
-    
-    
-        <p class="pfadein first2" style="text-align: center; color: white; position: absolute; top: 300px; left: 505px; display: none; ">
-            The value of your chips is determined by the price you pay for them.<br /><br />Player can bet on single numbers, or on<br /><br />
-            adjacent numbers.Also can play colors, odd or evennumbers.<br /><br />A bet on a single number pays 2 to 1, including<br /><br />
-            the 0.Bets on red or black, odd or even pay 1 for 1.<br /><br />
-        </p>
-        <h3 class="text1 first2" style="color: white; position: absolute; top: 520px; left: 635px; display: none;">Then</h3>
-        <h3 class="text2 first2" style="color: white; position: absolute; top: 520px; left: 685px; display: none;">Are</h3>
-        <h3 class="text3 first2" style="color: white; position: absolute; top: 520px; left: 721px; display: none;">You</h3>
-        <h3 class="text4 first2" style="color: white; position: absolute; top: 520px; left: 760px; display: none;">Ready?</h3>
-        <img class="img4 first2" src="PNG image (4).png" style="width:400px;position:absolute;bottom:0px;right:0px;display:none;" />
-        <h1 class="oo first2" style="color: white; position: absolute; top: 560px; left: 705px; display: none; ">Yes</h1>
-        <h3 class="ot" style="position:absolute;top:10px;right:17px;color:white;display: none;">MONEY</h3>
-        <div class="ot w" style="height: 655px; width: 20px; background-color: lemonchiffon; border-radius: 50px; position: absolute;bottom:20px;right:40px;display:none;"></div>
+        <div style="position: absolute;top: 0px;color: aliceblue;">
+            <h4>補充說明:</h4>
+            <p>
+                1.canvas延伸畫輪盤，且會轉動<br>
+                2.有正確的賠付<br>
+                3.使用方式:先按下注金額，金額為零，無法選擇想要的數字;<br>
+                要有下注，按下ready漢堡才會轉，賭贏賭輸輪盤轉完後有小動畫<br>
+                ，旁邊的血調顯示本金還剩多少<br>
+                4.有許多引導視線動畫
+            </p>
+        </div>
+        <h3 class="ot" style="position:absolute;top:10px;right:17px;color:white;">MONEY</h3>
+        <div class="ot w" style="height: 655px; width: 20px; background-color: lemonchiffon; border-radius: 50px; position: absolute;bottom:20px;right:40px;"></div>
         <div class="p1 ot mon"></div>
         <div class="p2 ot mon"></div>
         <div class="p3 ot mon"></div>
-        <h4 class="w2 ot" style="color: white;position:absolute;top:28px;right:38px;display: none; ">1000</h4>
-        <h3 class="ot" style="color: white;position:absolute;bottom:57px;left:315px;display: none;">BET :</h3>
-        <h3 class="ot w3" style="color: white;position:absolute;bottom:57px;left:367px;display: none;">0</h3>
-        <img class="ot w4" src="PNG image (6).png" style="width:200px;position:absolute;bottom:0px;right:0px;display: none;" />
-        <h3 class="ot w4" style="color: white;position:absolute;bottom:150px;right:160px;display: none;">Darling, <br>choose your bet</h3>
+        <h4 class="w2 ot" style="color: white;position:absolute;top:28px;right:38px; ">1000</h4>
+        <h3 class="ot" style="color: white;position:absolute;bottom:57px;left:315px;">BET :</h3>
+        <h3 class="ot w3" style="color: white;position:absolute;bottom:57px;left:367px;">0</h3>
+        <img class="ot w4" src="PNG image (6).png" style="width:200px;position:absolute;bottom:0px;right:0px;" />
+        <h3 class="ot w4" style="color: white;position:absolute;bottom:150px;right:160px;">Darling, <br>choose your bet</h3>
         <img class="w5" src="PNG image (7).png" style="width:300px;position:absolute;bottom:0px;left:0px;display: none;" />
         <h3 class="w5" style="color: white;position:absolute;top:280px;left:45px;display: none;">Oh ~ poor little thing</h3>
         <div class="ot dd" onclick="spin();"></div>
-        <h3 class="ot" style="color: white;position:absolute;bottom:83px;right:372px;display: none;">READY</h3>
+        <h3 class="ot" style="color: white;position:absolute;bottom:83px;right:372px;">READY</h3>
         <canvas class="lll" id="wheelcanvas" width="500" height="500" style="position: absolute;bottom: 50px;left: 450px;z-index: -40;display: none;"></canvas> 
         <img class="lll" src="PNG image (18).png" style="width: 440px;position:absolute;bottom:0px;left:475px;z-index: -4;display: none;"/>
         <h1 class="ll" style="color: white;position: absolute;bottom: 360px;left: 650px;display:none;">You Get</h3>
@@ -160,7 +152,7 @@
         <img class="w6" src="PNG image (22).png" style="width:200px;position:absolute;bottom:0px;left:0px;display: none;" />
         <h3 class="w6" style="color: white;position:absolute;bottom:130px;left:120px;text-align: right;z-index: 10;display: none;"><mark>things get tricky,<br> right ?</mark></h3>
 
-        <table class="mytable" style="z-index:100;position:absolute;top:300px;left:250px;display:none;">
+        <table class="mytable" style="z-index:100;position:absolute;top:300px;left:250px;">
             <tbody>
                 <tr>
                     <td rowspan="3" >0</td>
