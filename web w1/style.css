@@ -1,0 +1,50 @@
+video{
+    border:1px solid black;
+    position: absolute;
+    right: 155px;
+    top: 25px;
+    width: 400px;
+}
+#progressBar{
+    width: 320px;
+}
+#tv{
+    width:600px;
+    height: 300px;
+    z-index: 100;
+    position: absolute;
+    right:0px;
+}
+#whennotv{
+    width: 400px;
+    z-index: -20;
+    position: absolute;
+    top:20px;
+    right: 155px;
+}
+#remoteControl{
+    background-color: black;
+    z-index: -5px;
+    width: 150px;
+    height: 400px;
+    color: aliceblue;
+    border-radius: 8px;
+    padding: 5px;
+}
+#number{
+    padding-left: 25px;
+    padding-top: 15px;
+}
+#bb{
+    margin: 2.5px;
+}
+#chanel{
+    padding-left: 26px;
+}
+#chanelnumber{
+    color: white;
+    z-index: 120;
+    position: absolute;
+    right:210px;
+    top:20px;
+}
